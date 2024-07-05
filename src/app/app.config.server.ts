@@ -1,21 +1,22 @@
-// app.module.ts (ou login.module.ts si vous utilisez un module spécifique pour login)
+// app.module.ts
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms'; // Importez FormsModule
+import { FormsModule } from '@angular/forms'; // Import FormsModule if needed for other forms
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { routes } from './app.routes'; // Importez vos routes ici
+import { routes } from './app.routes'; // Import your routes here
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent],
+  declarations: [
+    // Remove AppComponent from declarations
+  ],
   imports: [
     BrowserModule,
-    FormsModule, // Ajoutez FormsModule ici
-    RouterModule.forRoot(routes), // Configurez les routes ici
+    FormsModule, // Add FormsModule here if it's required for other parts of your application
+    RouterModule.forRoot(routes) // Configure your routes here
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [] // Bootstrap AppComponent here
 })
 export class AppModule {}
