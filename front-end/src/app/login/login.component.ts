@@ -8,5 +8,15 @@ import { Component } from '@angular/core';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+  email: string = '';
+  password: string = '';
+  rememberMe: boolean = false;
+
+  onSubmit() {
+    // Handle form submission
+    console.log('Email:', this.email);
+    console.log('Password:', this.password);
+    console.log('Remember Me:', this.rememberMe);
+  }
 
 }
