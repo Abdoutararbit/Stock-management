@@ -1,9 +1,14 @@
+
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 /* @import "../node_modules/material-icons/iconFont/material-icons.css"; */
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
-
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif; /* Optional: Define a global font */
+}
  body {
   background-color: #f6f5f4;
 }
